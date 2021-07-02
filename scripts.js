@@ -51,11 +51,17 @@ function getPokemonInfo(url) {
      document.querySelector(".pokemon-info").innerHTML += `<br><span>${"height: "+data.height+"ms"}</span>`
      ;
      document.querySelector(".pokemon-info").innerHTML += `<br><span>${"Type: "+data.types[0].type.name}</span>`;
-     document.querySelector(".pokemon-info").innerHTML += `<span>${", "+data.types[1].type.name}</span>`
-     ;
-     document.querySelector(".pokemon-info").innerHTML += `<br><span>${"Ability: "+data.abilities[0].ability.name}</span>`;
-     document.querySelector(".pokemon-info").innerHTML += `<br><span>${"Ability: "+data.abilities[1].ability.name}</span>`;
-     document.querySelector(".pokemon-info").innerHTML += `<br><span>${"Ability: "+data.abilities[2].ability.name}</span>`;
+     if(data.types[1]){
+      document.querySelector(".pokemon-info").innerHTML += `<span>,${ data.types[1].type.name }</span>`;
+     }
+     
+     
+     document.querySelector(".pokemon-info").innerHTML += `<br><span>${"Ability 1: "+data.abilities[0].ability.name}</span>`;
+     if (data.abilities[1].ability.name){
+      document.querySelector(".pokemon-info").innerHTML += `<br><span>${"Ability 2: "+data.abilities[1].ability.name}</span>`;
+     }
+    
+    //  document.querySelector(".pokemon-info").innerHTML += `<br><span>${"Ability: "+data.abilities[2].ability.name}</span>`;
      
     });
 }

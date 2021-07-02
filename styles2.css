@@ -1,3 +1,6 @@
+body{
+    font-family: sans-serif;
+}
 .card{
     background-image: url(./new.png);
     width:23vw;
@@ -21,8 +24,10 @@
 .pokemon-info{
     font-size: 21px;
     color: gold;
-    margin-left: 50px;
+    /* margin-left: 100px; */
     /* margin-top: 20px; */
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .full{
@@ -39,15 +44,16 @@
     flex-direction: row;
     justify-content:center;
     margin-left: 10px;
+    padding: 5% 5%;
 }
 .button{
     width: 50%;
-    background: rgba( 255, 255, 255, 0.95 );
+    /* background: rgba( 255, 255, 255, 0.95 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 20.0px );
 -webkit-backdrop-filter: blur( 20.0px );
 border-radius: ;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 .name{
     margin-left: 30%;
@@ -72,6 +78,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     position: absolute;
     top:2%;
     margin-left: 40px;
+}
+.bottom{
+    background-color: ;
 }
 
 @media (max-width: 1400px) {
