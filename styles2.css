@@ -1,0 +1,92 @@
+.card{
+    background-image: url(./new.png);
+    width:23vw;
+    height: 500px;
+    /* background-color: white; */
+}
+/* .top{
+    padding-top: 300x;
+} */
+.pokemon-pic img{
+    /* background-color: black; */
+    width: 180px;
+    height: 180px;
+    margin-left: 25%;
+    text-align: center;
+    border-radius: 50%; 
+    /*  margin-top: 10%; */
+    
+    
+}
+.pokemon-info{
+    font-size: 21px;
+    color: gold;
+    margin-left: 50px;
+    /* margin-top: 20px; */
+}
+
+.full{
+    background-image: url(./pngegg.png);
+    width: 23%;
+}
+.all{
+    width: 25%;
+    border:5px solid gold;
+
+}
+.next-prev{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-left: 10px;
+}
+.button{
+    width: 50%;
+    background: rgba( 255, 255, 255, 0.95 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20.0px );
+-webkit-backdrop-filter: blur( 20.0px );
+border-radius: ;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.name{
+    margin-left: 30%;
+    margin-bottom: ;
+    font-size: 35px;
+    color: gold;
+}
+.dex{
+    width: 200px;
+    height: 80px;
+    margin-left: 80px;
+}
+.ball{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 23px;
+    margin-left: 13px;
+}
+.number{
+    font-size: 30px;
+    width: 5%;
+    position: absolute;
+    top:2%;
+    margin-left: 40px;
+}
+
+@media (max-width: 1400px) {
+    .full{
+        width:100%;
+    }
+    .pokemon-info{
+        width: 100%;
+        padding-bottom: 100px;
+    }
+    .pokemon-pic{
+        width:100%;
+        
+    }
+    .card{
+        width: 100%;
+    }
+}
