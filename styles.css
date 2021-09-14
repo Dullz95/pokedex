@@ -39,6 +39,8 @@ body{
 .full{
     background-image: url(./pngegg.png);
     width: 23%;
+    border-radius: 22px;
+    margin-left: 35%;
 }
 .all{
     width: 25%;
